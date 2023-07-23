@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:lightyellow
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+h2{
+    font-family:cursive;
+    font-size: 30px;;
+}
+
+#title{
+    font-family:cursive;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#titlee{
+    font-family:cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+main {
+    padding: 1rem;
+    background-color:white;
+}
+#searchInput{
+
+    width:250px;
+    height:30px;
+    background-color: lightblue;
+    border-radius:4px;
+    border:3px solid darkblue;
+}
+
+#searchInput::placeholder{
+    color: black;
+}
+
+#rate{
+    color:darkblue;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+.movie-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.movie-card:hover{
+    background-color: lightyellow;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.movie-card h2 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.pagination {
+    /* display: flex;
+    justify-content: center; */
+    margin: 1rem;
+}
+
+.pagination button {
+    background-color: lemonchiffon;
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin: 0.5rem 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.pagination button:hover {
+    background-color: black;
+    color:white
+    
+}
+
+.movie-details {
+    display: none;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.movie-details h2 {
+    margin-top: 0;
+}
+
+.movie-details p {
+    margin-top: 0.5rem;
+}
+
+.rating-container {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    
+}
+
+.rating-container label {
+    margin-right: 0.5rem;
+}
+#comment{
+    background-color: lightgoldenrodyellow;
+    width:250px;
+    height:100px;
+    border: 2px solid black;
+    margin-top:10px;
+}
+
+#txtcmt{
+    color: darkgreen;
+    font-size: 25px;
+    font-weight: bold;
+}
+#create{
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: black;
+    
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin:10px;
+}
+
+#create:hover{
+    background-color: black;
+    color:white;
+}
